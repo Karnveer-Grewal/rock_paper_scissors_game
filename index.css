@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+}
