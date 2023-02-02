@@ -55,4 +55,14 @@ function getResult() {
   }
 
   resultDisplay.innerHTML = result;
+
+  if (resultDisplay.innerHTML === "It's a Draw.") {
+    resultDisplay.style.color = 'yellow';
+  }
+  if (resultDisplay.innerHTML === 'You Win!!!') {
+    resultDisplay.style.color = 'green';
+  }
+  if (resultDisplay.innerHTML === 'You Lost.') {
+    resultDisplay.style.color = 'red';
+  }
 }

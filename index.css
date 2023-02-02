@@ -1,23 +1,56 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  background-color: #191716;
+  color: #e0e2db;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
+  font-size: 50px;
+  color: #ae8e1c;
   text-align: center;
   margin: 20px 0px;
 }
 
 h2 {
+  font-size: 20px;
+  margin: 7px;
+}
+
+#display-container {
+  width: 50%;
+  margin: auto;
   text-align: center;
-  margin: 10px;
 }
 
 #btn-container {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 button {
   margin: 10px;
+  padding: 5px;
+  border-color: #e0e2db;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button:hover,
+button:active {
+  color: #a26769;
+  cursor: pointer;
+}
+
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}
+.draw {
+  color: yellow;
 }
