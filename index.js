@@ -2,6 +2,7 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
+const hiddenClass = Array.from(document.getElementsByClassName('hidden'));
 let userChoice;
 let computerChoice;
 let result;
@@ -12,6 +13,7 @@ possibleChoices.forEach((possibleChoice) =>
     userChoiceDisplay.innerHTML = userChoice;
     generateComputerChoice();
     getResult();
+    displayResults();
   })
 );
 
@@ -65,4 +67,8 @@ function getResult() {
   if (resultDisplay.innerHTML === 'You Lost.') {
     resultDisplay.style.color = 'red';
   }
+}
+
+function displayResults() {
+  hiddenClass.forEach((element) => (element.style.visibility = 'visible'));
 }
